@@ -1,0 +1,223 @@
+   <div class="wwjjm">
+       <div class="deinfo">
+           <div class="icon"> <i class="state st2"></i></div>
+           <div class="text">进行中</div>
+           <div class="pname">标包名称：北京市上庄水库修缮改造项目 </div>
+           <div class="bname">标包编号：UC897572358</div>
+       </div>
+       <div class="wjjm-header">
+           <form class="layui-form">
+               <div class="layui-input-inline">
+                   <select name="interest" lay-filter="aihao">
+                       <option value="0">按未递交优先排序</option>
+                       <option value="1">按未递交优先排序</option>
+                       <option value="3">按未递交优先排序</option>
+                   </select>
+               </div>
+               <div class="layui-input-inline">
+                   <input type="text" name="title" required lay-verify="required" placeholder="请输入关键字"
+                       autocomplete="off" class="layui-input" id="keyword">
+                   <span class="searchbtn layui-icon">&#xe615;</span>
+               </div>
+           </form>
+       </div>
+       <div class="wjjm">
+           <ul class="wjjm-ul">
+               <li>
+                   <div style="width:50px;">序号</div>
+                   <div style="text-align: left">投标单位</div>
+                   <div style="width:100px;">文件校验情况</div>
+                   <div>备注</div>
+                   <div style="width:100px;">解密完成时间</div>
+                   <div style="width:80px;">文件上传</div>
+                   <div>操作</div>
+               </li>
+               <li>
+                   <div><span>1</span></div>
+                   <div style="text-align: left" class="layui-elip"><span>巨石科技股份有限公司</span></div>
+                   <div><span>校验成功</span></div>
+                   <div>
+                       <span>
+                           <span class="mark layui-icon">
+                               &#xe63c;
+                               <span class="layui-badge-dot"></span>
+                           </span>
+                       </span>
+                   </div>
+                   <div><span>2019.07.01</span></div>
+                   <div>
+                       <span>已上传</span>
+                   </div>
+                   <div>
+                       <span class="btn small  jiemi">解密</span>
+                   </div>
+               </li>
+               <li>
+                   <div><span>1</span></div>
+                   <div style="text-align: left"><span>巨石科技股份有限公司</span></div>
+                   <div><span>校验成功</span></div>
+                   <div>
+                       <span>
+                           <span class="mark layui-icon">
+                               &#xe63c;
+                               <span class="layui-badge-dot"></span>
+                           </span>
+                       </span>
+                   </div>
+                   <div><span>2019.07.01</span></div>
+                   <div>
+                       <span class="btn small  ful">文件上传</span>
+                   </div>
+                   <div>
+                       <span>
+                           <div class="waiting">
+                               <div class="skillbar ">
+                                   <span class="title">解密中...</span>
+                                   <span class="percent">75%</span>
+                                   <div class="filled" data-width="75%" style="width: 75%;"></div>
+                               </div>
+                           </div>
+                       </span>
+                   </div>
+               </li>
+               <li>
+                   <div><span>1</span></div>
+                   <div style="text-align: left"><span>巨石科技股份有限公司</span></div>
+                   <div><span>校验成功</span></div>
+                   <div>
+                       <span>
+                           <span class="mark layui-icon">
+                               &#xe63c;
+                               <span class="layui-badge-dot"></span>
+                           </span>
+                       </span>
+                   </div>
+                   <div><span>2019.07.01</span></div>
+                   <div>
+                       <span class="btn small  ful">文件上传</span>
+                   </div>
+                   <div>
+                       <span class="failed">解密失败</span>
+                   </div>
+               </li>
+
+               <li>
+                   <div><span>1</span></div>
+                   <div style="text-align: left"><span>巨石科技股份有限公司</span></div>
+                   <div><span>校验成功</span></div>
+                   <div>
+                       <span>
+                           <span class="mark layui-icon">
+                               &#xe63c;
+                               <span class="layui-badge-dot"></span>
+                           </span>
+                       </span>
+                   </div>
+                   <div><span>2019.07.01</span></div>
+                   <div>
+                       <span class="btn small  ful">文件上传</span>
+                   </div>
+                   <div>
+                       <span class="btn small  jiemi disabled">解密</span>
+                   </div>
+               </li>
+
+
+           </ul>
+           <div id="layer" class="layer">
+               <textarea name="" id="" cols="30" rows="10"></textarea>
+           </div>
+       </div>
+       <div class="wjjm-footer">
+
+           <div class="w-fwrap">
+               <div class="fqjm-wrap">
+                   <span>开始解密时间: 13:30:15 </span>
+                   <span>截止时间: 13:50:15</span>
+                   <span>解密剩余时间: 00:20:00</span>
+               </div>
+               <div>
+                   <span>总投标人：</span>
+                   <span class="g-label">24</span>
+                   <span>已解密：</span>
+                   <span class="g-label">24</span>
+                   <span>未解密：</span>
+                   <span class="g-label">24</span>
+                   <span class="btn small fqjm">发起解密</span>
+                   <span class="qrcode"><i class="iconfont">&#xe621;</i>扫码解密</span>
+               </div>
+           </div>
+
+       </div>
+   </div>
+   <div class="shade pops popfqjm" id="fqjm" style="display: none">
+       <div class="pop ">
+           <div class="close iconfont">&#xe61a;</div>
+           <div class="title">已成功发起解密</div>
+           <div class="content">远程投标人需要在20分钟内解密</div>
+           <div class="btn-group">
+               <div class="btn btn1">知道了</div>
+           </div>
+       </div>
+   </div>
+  <div class="shade pops popjmsb" id="jmsb" style="display: block">
+      <div class="pop ">
+          <div class="close iconfont">&#xe61a;</div>
+          <div class="title">远程解密失败</div>
+          <div class="content">
+              当前解密投标单位名称“北京中企动力科
+              技股份有限公司”与插入锁的投标单位名
+              称“北京广联达正源兴邦科技有限公司”
+              不一致，请检查插入的CA锁是否正确！
+          </div>
+          <div class="icon failed"></div>
+      </div>
+  </div>
+   <script src="./res/js/an-skill-bar.js"></script>
+   <script>
+       $(document).ready(function () {
+           $(".fqjm").on("click", function () {//点击发起解密
+               console.log("发起解密");
+               $("#fqjm").show();
+           })
+           $(".btn1").on("click", function () {
+               console.log("解密失败");
+               $("#jmsb").show();
+           })
+           $(".mark").on("click", function (e) {
+
+               e.stopPropagation(); //阻止事件冒泡
+               var left = e.clientX - 20;
+               var top = e.clientY + 20;
+               $("#layer").css("left", left);
+               $("#layer").css("top", top);
+               $("#layer").show();
+           })
+           $(".layer").on("click", function (e) {
+               e.stopPropagation(); //阻止事件冒泡
+           })
+           $(document).on("click", function () {
+               if (!$(".layer").is(":hidden")) {
+                   $(".layer").hide();
+                   console.log("保存数据!");
+               }
+           })
+           $(".fqjm").on("click", function () {
+               $(".fqjm-wrap").show();
+           })
+           $(".searchbtn").on("click", function () {
+               layer.msg("搜索了:" + $("#keyword").val());
+           })
+           $('.skillbar').skillbar({
+               speed: 1000,
+           });
+           var form = layui.form;
+
+           form.on('select(filter)', function (data) {
+               console.log(data.elem); //得到select原始DOM对象
+               console.log(data.value); //得到被选中的值
+               console.log(data.othis); //得到美化后的DOM对象
+           });
+           form.render();
+       });
+   </script>

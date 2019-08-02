@@ -1,0 +1,91 @@
+<div class="wkbjs">
+    <div class="deinfo">
+        <div class="icon"> <i class="state st2"></i></div>
+        <div class="text">进行中</div>
+        <div class="pname">标包名称：北京市上庄水库修缮改造项目 </div>
+        <div class="bname">标包编号：UC897572358</div>
+    </div>
+
+    <div class="kbjs">
+        <form class="layui-form" action="#">
+            <div class="layui-form-item">
+                <label class="layui-form-label">开标状态</label>
+                <div class="layui-inline">
+                    <span class="kbjs-state">正常</span>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">有效投标人：</label>
+                </div>
+                <div class="layui-inline">
+                    <span class="g-label">25</span>
+                </div>
+                <div class="layui-inline" style="color: coral">
+                    *有效投标人少于3家
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">备注</label>
+                <div class="layui-input-block">
+                    <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+        </form>
+        <div class="kbjs-op">
+            <div>当前时间 2019.06.06 12:00:01</div>
+            <div class="btn btnKbjs">开标结束</div>
+        </div>
+        <div class="kbjs-ok">
+            <div class="fin-img"></div>
+            <div class="fin-kbjs">开标已结束</div>
+            <div>当前时间 2019.06.06 12:00:01</div>
+        </div>
+    </div>
+    <div class="shade pops pop3" style="display: none">
+        <div class="pop ">
+            <div class="close iconfont">&#xe61a;</div>
+            <div class="title">确定要结束开标？</div>
+            <div class="btn-group">
+                <div class="btn agree">确定</div>
+                <div class="btn cancel">取消</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./res/js/an-skill-bar.js"></script>
+<script>
+    ;
+    ! function () {
+        $(document).ready(function () {
+            $(".searchbtn").on("click", function () {
+                layer.msg("搜索了:" + $("#keyword").val());
+            })
+            $(".btnKbjs").on("click", function () {
+                $(".wkbjs .pop3").show();
+            });
+
+
+            $("body").on("click", ".wkbjs .agree", function (e) {
+                e.stopPropagation(); //阻止事件冒泡
+                console.log(".wkbjs .agree");
+                $(".kbjs-op").hide();
+                $(".kbjs-ok").show();
+            })
+            $('.skillbar').skillbar({
+                speed: 1000,
+            });
+            var form = layui.form;
+
+            form.on('select(filter)', function (data) {
+                console.log(data.elem); //得到select原始DOM对象
+                console.log(data.value); //得到被选中的值
+                console.log(data.othis); //得到美化后的DOM对象
+            });
+            form.render();
+        });
+
+    }();
+    //监听提交
+</script>

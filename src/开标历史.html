@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>海淀区远程开标大厅</title>
+    <link rel="stylesheet" href="res/layui/css/layui.css">
+    <link rel="stylesheet" href="res/flipclock/flipclock.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <link rel="stylesheet" href="res/css/style.css">
+</head>
+
+<body>
+    <div class="container historyWrap">
+        <div class="header">
+            <div class="hleft">
+                <span class="back"><i class="layui-icon">&#xe65c;</i></span>
+                <span class="logo"></span>
+                <span class="title">海淀区远程开标大厅</span>
+            </div>
+            <div id="title" class="title">开标历史</div>
+            <div class="hright ">
+                <a href="#" class="login">
+                    <i class="layui-icon">&#xe66f;</i>
+                    <span class="text">HakunaMatata</span>
+                </a>
+                <a class="exit" href="#">退出</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="info">
+                <span class="layui-badge-dot"></span>
+                欢迎进入海淀公共资源交易平台网上开标大厅！
+            </div>
+            <div class="wrap wmain">
+                 <form class="layui-form check-form">
+                    <span id="time"></span>
+                    <div class="layui-input-inline">
+                        <input type="text" name="title" required lay-verify="required" placeholder="请输入关键字"
+                         autocomplete="off" class="layui-input" id="keyword">
+                        <span class="searchbtn layui-icon">&#xe615;</span>
+                    </div>
+                    <div class="layui-input-inline">
+                            <select name="interest" lay-filter="aihao">
+                                <option value="0">区域</option>
+                                <option value="1">区域1</option>
+                                <option value="3">区域2</option>
+                            </select>
+                    </div>
+                    <div class="layui-input-inline">
+                            <select name="interest" lay-filter="aihao">
+                                <option value="0">状态</option>
+                                <option value="1">状态1</option>
+                                <option value="3">状态2</option>
+                            </select>
+                    </div>
+                    <div class="layui-input-inline">
+                            <select name="interest" lay-filter="aihao">
+                               <option value="0">专业</option>
+                               <option value="1">专业1</option>
+                               <option value="3">专业2</option>
+                             </select>
+                    </div>
+                    <div class="layui-input-inline">
+                            <select name="interest" lay-filter="aihao">
+                               <option value="0">行业</option>
+                               <option value="1">行业1</option>
+                               <option value="3">行业2</option>
+                            </select>
+                    </div>
+                </form>
+                <div class="kbzb">
+                    <table class="kbzb-ul">
+                                <tr class="tableHead"></tr>
+                                <tr>
+                                        <td>
+                                            <span class="text">政府采购</span>
+                                        </td>
+                                        <td>
+                                             <span class="text">登录-开标结束-评标结束（多次回退）39</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">Gbes产品-开标结束（流标）37</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">1</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">2019-07-12 09:58:15</span>
+                                        </td>
+                                        <td onclick="downTable(this)" class="motor">
+                                            <span>
+                                                <span class="mark layui-icon">
+                                                   <span class="icon layui-icon-down"></span>
+                                                </span>
+                                             </span>
+                                        </td>
+                                </tr>
+                                <tr class="downTd">
+                                    <td class="colsTd">
+                                        <table style="width:100%">
+                                            <tr class="tableDownHead">
+                                   
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                               <td>
+                                                    <span class="text">Gbes产品-开标结束（流标）</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                </td>
+                                                 <td>
+                                                     <span class="text">施工</span>
+                                                 </td>
+                                                 <td>
+                                                     <span class="text">广联达公司</span>
+                                                </td>
+                                                 <td>
+                                                     <span class="text">广正字公司</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">广联达</span>
+                                                </td>
+                                                 <td>
+                                                    <span class="text">开标室API</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">开标结束</span>
+                                                </td>
+                                                <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                                    <td>
+                                                         <span class="text">Gbes产品-开标结束（流标）</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">施工</span>
+                                                      </td>
+                                                      <td>
+                                                          <span class="text">广联达公司</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">广正字公司</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">广联达</span>
+                                                     </td>
+                                                      <td>
+                                                         <span class="text">开标室API</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">开标结束</span>
+                                                     </td>
+                                                     <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                                    <td>
+                                                         <span class="text">Gbes产品-开标结束（流标）</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">施工</span>
+                                                      </td>
+                                                      <td>
+                                                          <span class="text">广联达公司</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">广正字公司</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">广联达</span>
+                                                     </td>
+                                                      <td>
+                                                         <span class="text">开标室API</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">开标结束</span>
+                                                     </td>
+                                                     <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                                    <td>
+                                                         <span class="text">Gbes产品-开标结束（流标）</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">施工</span>
+                                                      </td>
+                                                      <td>
+                                                          <span class="text">广联达公司</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">广正字公司</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">广联达</span>
+                                                     </td>
+                                                      <td>
+                                                         <span class="text">开标室API</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">开标结束</span>
+                                                     </td>
+                                                     <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                                    <td>
+                                                         <span class="text">Gbes产品-开标结束（流标）</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">施工</span>
+                                                      </td>
+                                                      <td>
+                                                          <span class="text">广联达公司</span>
+                                                     </td>
+                                                      <td>
+                                                          <span class="text">广正字公司</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">广联达</span>
+                                                     </td>
+                                                      <td>
+                                                         <span class="text">开标室API</span>
+                                                     </td>
+                                                     <td>
+                                                         <span class="text">开标结束</span>
+                                                     </td>
+                                                     <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                            <span class="text">政府采购</span>
+                                        </td>
+                                        <td>
+                                             <span class="text">登录-开标结束-评标结束（多次回退）39</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">Gbes产品-开标结束（流标）37</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">1</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">2019-07-12 09:58:15</span>
+                                        </td>
+                                        <td onclick="downTable(this)" class="motor">
+                                            <span>
+                                                <span class="mark layui-icon">
+                                                   <span class="icon layui-icon-down"></span>
+                                                </span>
+                                             </span>
+                                        </td>
+                                </tr>
+                                <tr class="downTd">
+                                    <td class="colsTd">
+                                        <table style="width:100%">
+                                            <tr class="tableDownHead">
+                                   
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                               <td>
+                                                    <span class="text">Gbes产品-开标结束（流标）</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                </td>
+                                                 <td>
+                                                     <span class="text">施工</span>
+                                                 </td>
+                                                 <td>
+                                                     <span class="text">广联达公司</span>
+                                                </td>
+                                                 <td>
+                                                     <span class="text">广正字公司</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">广联达</span>
+                                                </td>
+                                                 <td>
+                                                    <span class="text">开标室API</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">开标结束</span>
+                                                </td>
+                                                <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                            <span class="text">政府采购</span>
+                                        </td>
+                                        <td>
+                                             <span class="text">登录-开标结束-评标结束（多次回退）39</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">Gbes产品-开标结束（流标）37</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">1</span>
+                                        </td>
+                                        <td>
+                                            <span class="text">2019-07-12 09:58:15</span>
+                                        </td>
+                                        <td onclick="downTable(this)" class="motor">
+                                            <span>
+                                                <span class="mark layui-icon">
+                                                   <span class="icon layui-icon-down"></span>
+                                                </span>
+                                             </span>
+                                        </td>
+                                </tr>
+                                <tr class="downTd">
+                                    <td class="colsTd">
+                                        <table style="width:100%">
+                                            <tr class="tableDownHead">
+                                   
+                                            </tr>
+                                            <tr class="tableDownCon">
+                                               <td>
+                                                    <span class="text">Gbes产品-开标结束（流标）</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">37001Gbes产品-开标结束（流标）37标段1</span>
+                                                </td>
+                                                 <td>
+                                                     <span class="text">施工</span>
+                                                 </td>
+                                                 <td>
+                                                     <span class="text">广联达公司</span>
+                                                </td>
+                                                 <td>
+                                                     <span class="text">广正字公司</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">广联达</span>
+                                                </td>
+                                                 <td>
+                                                    <span class="text">开标室API</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text">开标结束</span>
+                                                </td>
+                                                <td><span><span class="btn small btn-cb " onclick="look()">查看</span></span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                    </table> 
+                 </div>
+                 <div class="page">
+                     <div id="page"></div>  
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="shade syswrap"></div>
+    <div class="shade chrywrap"></div>
+    <div class="shade qtqkwrap"></div>
+    <div class="shade lbwrap"></div>
+
+    <script src="./res/js/jquery-1.11.3.min.js"></script>
+    <script src="./res/layui/layui.all.js"></script>
+    <script src="./res/js/index.js"></script>
+    <script src="./res/flipclock/flipclock.js"></script>
+    <script>
+            $(document).ready(function () {
+                $("body").on("click", ".close", function () {
+                    console.log("关闭");
+                    $(".shade").hide();
+                })
+                $("body").on("click", ".cancel", function () {
+                    console.log("取消");
+                    $(".shade").hide();
+                })
+                $("body").on("click", ".agree", function () {
+                    console.log("确定");
+                    $(".shade").hide();
+                });
+                $(".link-chry").on("click", function () {
+                    $(".chrywrap").load("参会人员记录.html");
+                    $(".chrywrap").show();
+                })
+                $(".link-qtqk").on("click", function () {
+                    $(".qtqkwrap").load("其他情况.html");
+                    $(".qtqkwrap").show();
+                })
+                $(".link-lb").on("click", function () {
+                    $(".lbwrap").load("流标.html");
+                    $(".lbwrap").show();
+                })
+                $(".info").on("click", function () {
+                    $(".syswrap").load("系统消息.html");
+                    $(".syswrap").show();
+                })
+                // 表头数据
+                var tableHead = [
+                    {'id':1,label:'类型项目',style:'width:auto'},
+                    {'id':2,label:'名称',style:'width:auto'},
+                    {'id':3,label:'项目编号',style:'width:auto'},
+                    {'id':4,label:'标段数',style:'width:auto'},
+                    {'id':5,label:'开标时间',style:'width:auto'},
+                    {'id':6,label:'操作',style:'width:100px'},
+                ];
+                // 合并格数
+                $('.colsTd').attr('colspan',tableHead.length)
+
+                $('.tableHead').html('');
+                for(var i=0;i<tableHead.length;i++){
+                    $('.tableHead').append(
+                     '<td style="'+tableHead[i].style+'">'+tableHead[i].label+'</td>'
+                    )
+                };
+                // 隐藏子表格
+                $('.downTd').hide();
+                // 显示时间
+                newDate();
+                // 初始化分页
+                var laypage = layui.laypage;
+                laypage.render({
+                    elem: 'page',
+                    count: 3,
+                    skin: '#1E9FFF',
+                    limit: 20,
+                    layout: [ 'prev', 'page', 'next', 'skip','count'],
+                    prev: '<em class="layui-icon layui-icon-left"></em>',
+                    next: '<em class="layui-icon layui-icon-right"></em>',
+                    jump: function(obj, first){
+                        // if(!first){
+                        //     layer.msg('第'+ obj.curr +'页', {offset: 'b'});
+                        // }
+                    }
+                });
+            });
+            //格式化时间
+            function formatTime (value) {
+                var date = value;
+                var year = date.getFullYear();
+                var month = (date.getMonth() + 1) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1);
+                var day = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+                var hours = date.getHours() < 10 ? '0' + date.getHours() : date.getHours();
+                var minutes = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
+                var seconds = date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds();
+                return year + ' 年 ' + month + ' 月 ' + day + ' 日 ' + ' ' + hours + ' : ' + minutes + ' : ' + seconds;
+            };
+            //客户端时间
+            function newDate(){
+                var time = formatTime(new Date());
+                $('#time').html(time)
+            };
+           //展开子表格
+           function downTable(a){
+            if($(a).find('.icon').hasClass('layui-icon-down')){
+                $(a).find('.icon').removeClass('layui-icon-down').addClass('layui-icon-up');
+                $(a).parents('tr').addClass('backgroundColor').addClass('closTr').next('.downTd').show();
+                //渲染子数据
+                var tableDownHead = [
+                        {'id':1,label:'标段编号',style:'width:auto'},
+                        {'id':2,label:'标段名称',style:'width:auto'},
+                        {'id':3,label:'专业类型',style:'width:auto'},
+                        {'id':4,label:'招标人',style:'width:auto'},
+                        {'id':5,label:'招标代理',style:'width:auto'},
+                        {'id':3,label:'区域',style:'width:auto'},
+                        {'id':4,label:'开标室',style:'width:auto'},
+                        {'id':5,label:'状态',style:'width:auto'},
+                        {'id':6,label:'操作',style:'width:100px'},
+                    ]
+                    $('.tableDownHead').html('');
+                    for(var i=0;i<tableDownHead.length;i++){
+                        $('.tableDownHead').append(
+                        '<td style="'+tableDownHead[i].style+'">'+tableDownHead[i].label+'</td>'
+                        )
+                    }
+            }else{
+                $(a).find('.icon').removeClass('layui-icon-up').addClass('layui-icon-down');
+                $(a).parents('tr').removeClass('backgroundColor').removeClass('closTr').next('.downTd').hide();
+            }
+           }
+           //时间轮询
+           setInterval("newDate()", 1000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>海淀区远程开标大厅</title>
+    <link rel="stylesheet" href="res/layui/css/layui.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <link rel="stylesheet" href="res/flipclock/flipclock.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="hleft">
+                <a href="#" class="back"><i class="layui-icon">&#xe65c;</i></a>
+                <span class="logo"></span>
+                <span class="title">海淀区远程开标大厅</span>
+            </div>
+            <div class="title">今日开标项目</div>
+            <div class="hright ">
+                <a href="#" class="message">
+                    <i class="layui-icon">&#xe667;</i>
+                    <span class="layui-badge-dot"></span>
+                    <span>通知</span>
+                </a>
+                <a href="#" class="login">
+                    <i class="layui-icon">&#xe66f;</i>
+                    <span>HakunaMatata</span>
+                </a>
+                <a class="exit" href="#">退出</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="info">
+                <span class="layui-badge-dot"></span>
+                欢迎进入海淀公共资源交易平台网上开标大厅！
+            </div>
+            <div class="wrap wfull">
+                <div class="tbdjswrap">
+                    <div class="kbdjs title">
+                        <span>项目名称：</span>
+                        <span>羊坊店医院医疗设备购置项目羊坊店医院医疗设备购置项目羊坊店医院医疗设备</span>
+                    </div>
+                    <div class="kbdjs title">
+                        <span>项目编号：</span>
+                        <span>TC19041NP</span>
+                    </div>
+                    <div class="kbdjs title">
+                        <span>标包名称：</span>
+                        <span>骨密度仪</span>
+                    </div>
+                    <div class="kbdjs title">
+                        <span>标包编号：</span>
+                        <span>包标1333333333333333333333333333333333333</span>
+                    </div>
+           
+                    <div class="kbdjs clockbox">
+                        <div class="clock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="link">
+                <li>
+                    <a href="#">参会人员记录</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">文件查看</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">其他情况</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">流标</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="./res/js/jquery-1.11.3.min.js"></script>
+    <script src="./res/layui/layui.all.js"></script>
+    <script src="./res/js/index.js"></script>
+    <script src="./res/flipclock/flipclock.js"></script>
+    <script>
+        //由于模块都一次性加载，因此不用执行 layui.use() 来加载对应模块，直接使用即可：
+        ;
+        // ! function () {
+
+        var layer = layui.layer,
+            form = layui.form;
+
+        $(".tabs li").on("click", function () {
+            $(this).addClass("on").siblings().removeClass();
+        })
+        setTimeout(function () {
+            $(".container").addClass("loaded");
+        }, 1000);
+        var clock;
+        clock = $('.clock').FlipClock({
+            clockFace: 'HourlyCounter',
+            autoStart: false,
+            language: 'zh',
+            callbacks: {
+                stop: function () {
+                    $('.message').html('The clock has stopped!')
+                }
+            }
+        });
+
+        clock.setTime(220880);
+        clock.setCountdown(true);
+        clock.start();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+  <div class="lb">
+      <div class="header">流标
+          <div class="close iconfont">&#xe61a;</div>
+      </div>
+      <div class="content layui-form">
+
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width:80px">标段一：</label>
+              <div class="layui-input-block" style="margin-left: 90px;">
+                  <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                      class="layui-input">
+              </div>
+          </div>
+          <div class="layui-form-item layui-form-text">
+              <label class="layui-form-label" style="width:80px">流标原因：</label>
+              <div class="layui-input-block" style="margin-left: 90px;">
+                  <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <div class="btn-group">
+                  <div class="btn agree">确定</div>
+                  <div class="btn cancel">取消</div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+ <script>
+     ;
+     ! function () {
+
+         $(document).ready(function () {
+
+             console.log("请求后台: 流标");
+             $("body").on("click", ".close", function () {
+                 console.log("关闭");
+                 $(".shade").hide();
+             })
+             $("body").on("click", ".cancel", function () {
+                 console.log("取消");
+                 $(".shade").hide();
+             })
+             $("body").on("click", ".agree", function () {
+                 console.log("确定");
+                 $(".shade").hide();
+             })
+         });
+     }();
+ </script>

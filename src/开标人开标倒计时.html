@@ -1,0 +1,49 @@
+<div class="tbdjswrap">
+    <div class="tbdjs title">
+        <span>项目名称：</span>
+        <span>羊坊店医院医疗设备购置项目羊坊店医院医疗设备购置项目羊坊店医院医疗设备</span>
+    </div>
+    <div class="tbdjs title">
+        <span>项目编号：</span>
+        <span>TC19041NP</span>
+    </div>
+    <div class="tbdjs title">
+        <span>标包名称：</span>
+        <span>骨密度仪</span>
+    </div>
+    <div class="tbdjs title">
+        <span>标包编号：</span>
+        <span>包标1333333333333333333333333333333333333</span>
+    </div>
+    <!-- <div class="tbdjs">
+        <span>开标倒计时</span>
+    </div> -->
+    <div class="tbdjs clockbox" >
+        <div class="clock"></div>
+    </div>
+    <div class="tbdjs">
+        <div class="kbricon usb"></div>
+        <div>请您准备好CA锁</div>
+    </div>
+    <div class="message"></div>
+</div>
+<script>
+    $(".tabs li").on("click", function () {
+        $(this).addClass("on").siblings().removeClass();
+    })
+    var clock;
+    clock = $('.clock').FlipClock({
+        clockFace: 'HourlyCounter',
+        autoStart: false,
+        language: 'zh',
+        callbacks: {
+            stop: function () {
+                // $('.message').html('The clock has stopped!')
+            }
+        }
+    });
+
+    clock.setTime(20880);
+    clock.setCountdown(true);
+    clock.start();
+</script>

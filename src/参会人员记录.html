@@ -1,0 +1,199 @@
+ <div class="chry">
+     <div class="header">参会人员记录
+         <div class="close iconfont">&#xe61a;</div>
+     </div>
+     <div class="content">
+         <div class="btn adduser">添加人员</div>
+         <div class="chry-cc">
+             <ul class="chrylist">
+                 <li>
+                     <div>序号</div>
+                     <div>参会人员</div>
+                     <div style="width:120px">人员角色</div>
+                     <div>证件号码</div>
+                     <div>手机号码</div>
+                     <div>部门</div>
+                     <div>职位</div>
+                     <div>备注</div>
+                     <div>操作</div>
+                 </li>
+                 <li>
+                     <div><span>1</span></div>
+                     <div>
+                         <span class="text">人员姓名</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span>
+                             <div class="layui-form">
+                                 <select name="interest" lay-filter="aihao">
+                                     <option value="0">人员角色</option>
+                                     <option value="1">人员角色</option>
+                                     <option value="3">人员角色</option>
+                                 </select>
+                             </div>
+                         </span>
+                     </div>
+                     <div>
+                         <span class="text">证件号码</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">手机号码</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">部门</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">职位</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">备注</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span>
+                             <span class="btn deleteUser">删除</span>
+                         </span>
+                     </div>
+                 </li>
+                 <li>
+                     <div><span>1</span></div>
+                     <div>
+                         <span class="text">人员姓名</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span>
+                             <div class="layui-form">
+                                 <select name="interest" lay-filter="aihao">
+                                     <option value="0">人员角色</option>
+                                     <option value="1">人员角色</option>
+                                     <option value="3">人员角色</option>
+                                 </select>
+                             </div>
+                         </span>
+                     </div>
+                     <div>
+                         <span class="text">证件号码</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">手机号码</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">部门</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">职位</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">备注</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span>
+                             <span class="btn deleteUser">删除</span>
+                         </span>
+                     </div>
+                 </li>
+                 <li>
+                     <div><span>1</span></div>
+                     <div>
+                         <span class="text">人员姓名</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span>
+                             <div class="layui-form">
+                                 <select name="interest" lay-filter="aihao">
+                                     <option value="0">人员角色</option>
+                                     <option value="1">人员角色</option>
+                                     <option value="3">人员角色</option>
+                                 </select>
+                             </div>
+                         </span>
+                     </div>
+                     <div>
+                         <span class="text">证件号码</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">手机号码</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">部门</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">职位</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span class="text">备注</span>
+                         <span class="input"><input type="text" value=""></span>
+                     </div>
+                     <div>
+                         <span>
+                             <span class="btn deleteUser">删除</span>
+                         </span>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </div>
+
+
+ <script>
+     ;
+     ! function () {
+         var layer = layui.layer,
+             form = layui.form;
+         form.render();
+         console.log("请求后台: 参会人员记录");
+
+         $(".adduser").on("click", function () {
+             console.log("添加参会人员记录");
+         })
+         $(".deleteUser").on("click", function () {
+             console.log("删除参会人员记录");
+         })
+         $(".chrylist .text").on("click", function (e) {
+             e.stopPropagation(); //阻止事件冒泡
+             var _this = $(this);
+
+             $(".chrylist .text").show();
+             $(".chrylist .input").hide();
+             var _text = _this.text();
+             _this.hide();
+             _this.next().show();
+             _this.next().find("input").val(_text);
+             _this.next().find("input").focus();
+             console.log("text", _this.next().find("input").val());
+         });
+         $(".chrylist .input input").on("click", function (e) {
+             e.stopPropagation(); //阻止事件冒泡
+         })
+         $(".chrylist input").on("blur", function (e) {
+             e.stopPropagation();
+             var _this = $(this);
+             //阻止事件冒泡
+             var _text = _this.val();
+             _this.parent().prev().text(_text);
+             console.log("input", _this.val());
+         })
+         $(document).on("click", function (e) {
+             $(".chrylist .text").show();
+             $(".chrylist .input").hide();
+             // layui-form
+         })
+     }();
+ </script>

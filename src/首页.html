@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>海淀区远程开标大厅</title>
+    <link rel="stylesheet" href="res/layui/css/layui.css">
+    <link rel="stylesheet" href="res/css/index.css">
+
+</head>
+
+<body>
+    <div class="home">
+        <div class="header">
+            <div class="hleft">
+                <span class="logo"></span>
+                <span class="title">海淀区远程开标大厅</span>
+            </div>
+            <div class="hright">
+                <a class="login">
+                    <i class="layui-icon">&#xe66f;</i> 登录
+                </a>
+                <a class="faq" href="#">常见问题</a>
+            </div>
+
+        </div>
+        <div class="shade logonwrap">
+            <div class="logon">
+                <div class="entrywrap">
+                    <div class="header">
+                        <span>登录方式选择</span>
+                    </div>
+                    <ul class="tabs">
+                        <li class="on">
+                            <span>用户名登录</span>
+                            <div>
+                                <input type="text" placeholder="用户名称">
+                                <input type="password" placeholder="用户密码">
+                                <div class="btn btnLogon namelogon">登录</div>
+                            </div>
+                        </li>
+                        <li><span>CA登录</span>
+
+                            <div>
+                                <input type="text" placeholder="CA名称">
+                                <input type="password" disabled placeholder="用户密码">
+                                <div class="btn btnLogon calogon">登录</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btnqrcode"></div>
+                </div>
+                <div class="qrcodewrap">
+                    <div class="header">
+                        <span>
+                            请用XXX手机应用扫描二维码
+                        </span>
+                    </div>
+                    <div class="qrcode"></div>
+                    <div class="btn btnLogon back">返回</div>
+                </div>
+            </div>
+            <div class="role">
+                <div class="header">
+                    <span>
+                        选择您的角色
+                    </span>
+                </div>
+                <div class="rolewrap">
+                    <ul class="rolelist">
+                        <li>
+                            <div>管理员角色-1 </div>
+                        </li>
+                        <li class="on layui-icon">
+                            <div>管理员角色-2</div>
+                        </li>
+                        <li>
+                            <div>管理员角色-3</div>
+                        </li>
+                        <li>
+                            <div>管理员角色-4</div>
+                        </li>
+                        <li>
+                            <div>管理员角色-5</div>
+                        </li>
+                        <li>
+                            <div>管理员角色-6</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn btnLogon namelogon">登录</div>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="./res/js/jquery-1.11.3.min.js"></script>
+    <script src="./res/layui/layui.all.js"></script>
+    <script src="./res/js/index.js"></script>
+    <script>
+        //由于模块都一次性加载，因此不用执行 layui.use() 来加载对应模块，直接使用即可：
+        ;
+        ! function () {
+            var layer = layui.layer,
+                form = layui.form;
+
+            layer.msg('海淀区远程开标大厅');
+        }();
+
+        $(".tabs li").on("click", function () {
+            $(this).addClass("on").siblings().removeClass();
+        });
+        $(".rolelist li").on("click", function () {
+            $(this).addClass("on").siblings().removeClass();
+        })
+        $(".btnqrcode").on("click", function () {
+            $(".entrywrap").hide();
+            $(".qrcodewrap").show();
+        })
+        $(".namelogon").on("click", function () {
+            $(".role").show();
+            $(".logon").show();
+        })
+        $(".login").on("click", function () {
+            $(".logonwrap").show();
+        })
+        $(".back").on("click", function () {
+            $(".qrcodewrap").hide();
+            $(".entrywrap").show();
+        })
+        $("body").on("click", ".kbzb-ul li span", function () {
+
+        })
+        setTimeout(() => {
+            $(".home").addClass("loaded");
+        }, 1000);
+    </script>
+</body>
+
+</html>

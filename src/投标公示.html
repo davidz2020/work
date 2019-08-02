@@ -1,0 +1,313 @@
+   <div class="wtbgs">
+       <div class="deinfo">
+           <div class="pname">项目名称：羊坊店医院医疗设备购置项目</div>
+           <div class="bname">项目编号：TC19041NP</div>
+       </div>
+       <div class="tbgs-header">
+           <span>总投标人：</span>
+           <span><input type="text" value="24" /></span>
+           <span>已解密：</span>
+           <span><input type="text" value="12" /></span>
+           <span>未解密：</span>
+           <span><input type="text" value="8" /></span>
+       </div>
+       <div class="tbgs">
+           <table class="layui-table" id="test"></table>
+       </div>
+   </div>
+   <script>
+       ;
+       ! function () {
+           var table = layui.table;
+           table.render({
+               elem: '#test',
+               //url: '/demo/table/user/',
+               cellMinWidth: 80, //全局定义常规单元格的最小宽度，layui 2.2.1 新增,
+               cols: [
+                   [{
+                       field: 'tbdwmc',
+                       title: '投标单位名称',
+                   }, {
+                       field: 'bsdjqk',
+                       title: '标书递交情况',
+                       align: 'center'
+                   }, {
+                       field: 'time',
+                       title: '时间',
+                       align: 'center'
+                   }, {
+                       field: 'bzjdjqk',
+                       title: '保证金递交情况',
+                       width: '30%',
+                       align: 'center'
+                   }]
+               ],
+               data: [{
+                       "id": "10001",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10002",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10003",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10004",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10005",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10006",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10007",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10001",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10002",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10003",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10004",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10005",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10006",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10007",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10004",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10005",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10006",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10007",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10001",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10002",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10003",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10004",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10005",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10006",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10007",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10001",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10002",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10003",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10004",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10005",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10006",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10007",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10004",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10005",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10006",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   },
+                   {
+                       "id": "10007",
+                       "tbdwmc": "广联达投标单位3",
+                       "bsdjqk": "已递交",
+                       "time": "2019-07-02 13:32",
+                       "bzjdjqk": "已递交"
+                   }
+               ],
+               skin: 'line', //表格风格
+               //    even: true,
+               //    ,limits: [5, 7, 10]
+               //    limit: 5//每页默认显示的数量
+               height: 'full-320',
+               limit: 20,
+               page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
+                   layout: ['prev', 'page', 'next', 'skip', 'count'], //自定义分页布局
+                   //,curr: 5 //设定初始在第 5 页
+                   groups: 2, //只显示 1 个连续页码
+                   first: false, //不显示首页
+                   last: false //不显示尾页
+               }
+           });
+       }();
+   </script>
